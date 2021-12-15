@@ -1,0 +1,56 @@
+     linux terminal commands
+------------------------------------------
+ps -> process status
+uname -> kernal version etc.
+hostname -> gives host name
+netstat -> status of your network
+ss -> active sessions
+env -> environmental variables
+lsblk -> list blosks
+lsusb -> shows usb
+lsof -> list open files
+apropos -> which command to use
+------------------------------------------
+ 
+------------------------------------------
+	manageing users
+
+/etc/passwd -> give all user in the system
+usermod --> modify user details(user passwords are stored in "s/etc/shadow")
+visudo -> txt editor used to edit sudoer file
+-----------------------------------------
+
+-----------------------------------------
+
+        package handling
+
+
+dpkg -> low level tool(not recomended)
+apt -> adv tool
+	apt edit-sources -> to change repository
+	apt list -installed -> show all installed packages(use grep to find particular app) 
+	apt remove -> remove only app saves all settings
+	apt purdge ->remove everything
+aptitude -> high lvl
+snap -> similar to repository
+	snap install-> install pkg
+
+------------------------------------------
+
+------------------------------------------
+
+       linux services
+
+
+ps -aux -> shows active services
+systemd -> control deamon service
+systemctl -> start stop or restart deamon  services 
+journalctl -> troubleshooting deamon
+	
+block website in linux:-
+ go to "/etc/hosts" and at the bottom add 127.0.0.1 www.abc.com
+
+block websitw in windows:-
+ go to "C:\Windows\System32\drivers\etc" and select hosts file, add 127.0.0.1 www.abc.com
+	
+/var/spool/mail/user or /var/log/auth.log -> incidend reported can be found here
